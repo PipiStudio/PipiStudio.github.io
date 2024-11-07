@@ -1,0 +1,46 @@
+/* index.css */
+body
+{
+	font-family: 思源宋体 CN;
+	background-color:#a1ffe0;
+}
+.navbar {
+    background-color: #00aaff;
+    overflow: hidden;
+}
+ 
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.navbar li {
+    float: left;
+}
+ 
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+ 
+.navbar li a:hover {
+    background-color: #0059ff;
+}
+ 
+.section {
+    padding: 60px 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+ 
+.section h2 {
+    color: #333;
+}
+.center {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+  }
