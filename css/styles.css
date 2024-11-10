@@ -1,4 +1,4 @@
-/* index.css */
+/* styles.css */
 body
 {
 	background-color: #a1ffe0 !important;
@@ -9,3 +9,13 @@ body
 	margin-left:auto;
 	margin-right:auto;
 }
+@font-face {
+	font-family: "思源宋体 CN";
+	src: url("img/sourcehanserifcn-medium.woff") format("woff");
+}
+@font-face {
+	font-family: "思源宋体 CN";
+	src: url("img/sourcehanserifcn-heavy.woff") format("woff");
+	font-weight: bold;
+}
+
