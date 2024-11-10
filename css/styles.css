@@ -1,11 +1,11 @@
 /* styles.css */
 @font-face {
 	font-family: "思源宋体 CN";
-	src: url(/img/SourceHanSerifCN-Medium.woff2);
+	src: url("/img/SourceHanSerifCN-Medium.woff2");
 }
 @font-face {
 	font-family: "思源宋体 CN";
-	src: url(/img/SourceHanSerifCN-Heavy.woff2);
+	src: url("/img/SourceHanSerifCN-Heavy.woff2");
 	font-weight: bold;
 }
 body
