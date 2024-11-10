@@ -1,17 +1,17 @@
 /* styles.css */
 @font-face {
-	font-family: "思源宋体 CN";
+	font-family: 思源宋体 CN;
 	src: url("/img/SourceHanSerifCN-Medium.woff2");
 }
 @font-face {
-	font-family: "思源宋体 CN";
+	font-family: 思源宋体 CN;
 	src: url("/img/SourceHanSerifCN-Heavy.woff2");
 	font-weight: bold;
 }
 body
 {
 	background-color: #a1ffe0 !important;
-	font-family: "思源宋体 CN" !important;
+	font-family: 思源宋体 CN !important;
 }
 .absolute-center
 {
