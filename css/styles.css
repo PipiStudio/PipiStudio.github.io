@@ -1,15 +1,16 @@
 /* styles.css */
 body
 {
-	background-color: #a1ffe0 !important;
-	font-family: "华文中宋","华文宋体","宋体",serif !important;
+	background-color: #3f3f3f !important;
+	font-family: 'Noto Serif SC',sans-serif !important;
+	color: white !important;
 }
-#index-icon
+#slogan
 {
 	display: none;
 }
-.absolute-center
+.fixed-center
 {
-	margin-left:auto;
-	margin-right:auto;
+	display: flex;
+	justify-content: center;
 }
