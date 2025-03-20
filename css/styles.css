@@ -1,16 +1,69 @@
 /* styles.css */
-body
-{
-	background-color: #3f3f3f !important;
-	font-family: 'Noto Serif SC',sans-serif !important;
-	color: white !important;
+body {
+    background: radial-gradient(circle, #3f3f3f, #2c2c2c); /* 径向渐变 */
+    background-size: 200% 200%; /* 增大背景尺寸 */
+    animation: gradient-animation 60s ease infinite; /* 动态渐变动画 */
+    font-family: 'Noto Serif SC', sans-serif !important;
+    color: white !important;
+    margin: 0;
+    overflow-x: hidden; /* 防止水平滚动条 */
 }
+
+/* 动态渐变动画 */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 #slogan
 {
 	display: none;
 }
+
 .fixed-center
 {
 	display: flex;
 	justify-content: center;
+}
+
+/* 自定义鲜橙色按钮样式 */
+.btn-orange {
+    background-color: #ff6f00 !important; 
+    border-color: #ff6f00 !important; 
+    color: #fff !important; 
+}
+
+.btn-orange:hover {
+    background-color: #e65c00 !important; 
+    border-color: #e65c00 !important;
+}
+
+.btn-orange:active,
+.btn-orange.active {
+    background-color: #cc5200 !important; 
+    border-color: #cc5200 !important;
+}
+
+.btn-orange:disabled {
+    opacity: 0.65 !important; 
+}
+
+/* 调整下拉菜单的位置 */
+.dropdown-menu-up {
+    top: auto !important; /* 确保覆盖 Bootstrap 的默认样式 */
+    bottom: 100% !important; /* 将菜单定位到触发器的上方 */
+    margin-bottom: 10px; /* 添加一点间距 */
+}
+
+/* 确保下拉菜单在底部导航栏中正常显示 */
+.navbar.fixed-bottom .dropdown-menu {
+    position: absolute !important; /* 强制使用绝对定位 */
+    transform: none !important; /* 防止 Bootstrap 的默认变换 */
 }

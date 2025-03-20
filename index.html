@@ -9,21 +9,44 @@
 		<link href="css/styles.css" rel="stylesheet"/>
 		<link href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
 		<script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
-		<script src="https://cdn.staticfile.net/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 		<script src="js/index.js"></script>
   	</head>
-  <body>
-		<!--导航栏-->
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center fixed-bottom">
-			<a class="navbar-brand mx-1" href="index.html">
-			    <img src="img/Icon_small.png" alt="logo" style="width:40px;">
-			</a>
-			<ul class="navbar-nav active">
-				<li class="nav-item"><a class="nav-link mx-1" href="gameview.html">作品</a></li>
-			</ul>
-			<span class="navbar-text mx-1">
-			    <b>我们只做好游戏！</b>
-			</span>
+  	<body>
+		<!-- 导航栏 -->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+			<div class="container">
+				<a class="navbar-brand mx-3" href="index.html">
+					<img src="img/Icon_small.png" alt="logo" style="width:40px;">
+					呆呆研究社
+				</a>
+
+				<!--导航链接-->
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link mx-3" href="gameview.html">作品</a></li>
+					<!-- 下拉菜单：我们的账号 -->
+					<li class="nav-item dropdown">
+						<a 
+							class="nav-link dropdown-toggle mx-3" 
+							href="#" 
+							id="navbarDropdown" 
+							role="button" 
+							data-bs-toggle="dropdown" 
+							aria-expanded="false"
+						>
+							我们的账号
+						</a>
+						<!-- 下拉菜单内容 -->
+						<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-up" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="https://github.com/PipiStudio/" target="_blank" rel="noopener noreferrer">Github</a></li>
+							<li><a class="dropdown-item" href="https://space.bilibili.com/1095627682" target="_blank" rel="noopener noreferrer">B站</a></li>
+						</ul>
+					</li>
+				</ul>
+				<span class="navbar-text mx-3">
+					<b>我们只做好游戏！</b>
+				</span>
+			</div>
 		</nav>
 		
 		<br/>
