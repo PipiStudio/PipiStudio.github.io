@@ -1,25 +1,18 @@
 /* styles.css */
-body {
-    background: radial-gradient(circle, #3f3f3f, #2c2c2c); /* 径向渐变 */
-    background-size: 200% 200%; /* 增大背景尺寸 */
-    animation: gradient-animation 60s ease infinite; /* 动态渐变动画 */
-    font-family: 'Noto Serif SC', sans-serif !important;
-    color: white !important;
+html, body {
+    height: 100%; /* 确保 html 和 body 高度为 100% */
     margin: 0;
-    overflow-x: hidden; /* 防止水平滚动条 */
+    padding: 0;
 }
 
-/* 动态渐变动画 */
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+body {
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Noto Serif SC', sans-serif !important;
+    color: white !important;
+    overflow-x: hidden; /* 防止水平滚动条 */
 }
 
 #slogan
@@ -66,4 +59,20 @@ body {
 .navbar.fixed-bottom .dropdown-menu {
     position: absolute !important; /* 强制使用绝对定位 */
     transform: none !important; /* 防止 Bootstrap 的默认变换 */
+}
+
+/* 自定义半透明黑色圆角卡片 */
+.card-transparent {
+    background-color: rgba(0, 0, 0, 0.6) !important; /* 半透明黑色背景 */
+    border: none !important; /* 移除默认边框 */
+    border-radius: 15px !important; /* 圆角效果 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 添加轻微阴影 */
+    backdrop-filter: blur(10px); /* 模糊背景效果（可选） */
+}
+
+/* 确保卡片内容的颜色适配 */
+.card-transparent .card-title,
+.card-transparent .card-text,
+.card-transparent .card-body {
+    color: white !important; /* 文字颜色设置为白色 */
 }
